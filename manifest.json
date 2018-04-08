@@ -4,7 +4,7 @@
   "description": "A React App using the chucknorris.io API.",
   "icons": [
     {
-      "src": "favicon.png",
+      "src": "imgs/favicon.png",
       "sizes": "64x64 32x32 24x24 16x16",
       "type": "image/png"
     }
