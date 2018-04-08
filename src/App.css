@@ -1,0 +1,11 @@
+html, body {
+  font-family: monospace;
+}
+
+.App {
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  justify-items: center;
+  min-height: 100vh;
+}
