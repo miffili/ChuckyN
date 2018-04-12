@@ -17,7 +17,7 @@ img {
 }
 
 button {
-  margin: 1rem;
+  /* margin: 1rem; */
   padding: 0.6rem;
   align-self: baseline;
   background-color: rgba(0, 0, 0, 0.1);
@@ -44,4 +44,18 @@ button {
   margin: 1rem;
   padding: 2rem;
   box-shadow: 0.25rem 0.25rem 1rem 0 rgba(0, 0, 0, 0.2);
+}
+
+form {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+}
+
+label {
+  margin: 0.6rem;
+}
+
+input[type="number"] {
+  width: 3rem;
 }
