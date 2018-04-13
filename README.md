@@ -9,10 +9,10 @@ Originally, I wanted to use another database, but I switched mid way through, be
 **user stories**
 
 The user:  
-    * sees a simple interface on load  
-    * can hit a button to get random Chuck Norris facts  
-    * can tweet a chosen Chuck Norris fact  
-    * can set a few different settings to tweak the results  
+* sees a simple interface on load  
+* can hit a button to get random Chuck Norris facts  
+* can tweet a chosen Chuck Norris fact  
+* can set a few different settings to tweak the results  
 
 ## The work process
 
