@@ -43,9 +43,10 @@ The user:
 
 ## What I still want to do
 
+- [ ] make settings form responsive  
+- [ ] refactor code, maybe the settings form in a separate component
 - [ ] implement Typechecking with PropTypes  
 - [ ] smooth out the transition of the settings menu when opened/closed → `CSSTransition`/`TransitionGroup`  
-- [ ] refactor code, maybe the settings form in a separate component
 
 -----------
 
