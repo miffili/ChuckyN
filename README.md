@@ -8,7 +8,7 @@ Originally, I wanted to use another database, but I switched mid way through, be
 
 **user stories**
 
-The user:
+The user:  
     * sees a simple interface on load  
     * can hit a button to get random Chuck Norris facts  
     * can tweet a chosen Chuck Norris fact  
@@ -20,8 +20,8 @@ The user:
 2. deploy with simple interface  
 
 3. set up interface with dummy components  
-4. fetch data and display it in Fact component  
-*insert picture*  
+4. fetch data and display it in the Fact component  
+![Dancin' Chuck Norris](https://media.giphy.com/media/9oIZogsRnw81FtHq4x/giphy.gif)  
 5. sketch out component tree  
 6. start from scratch  
     1. render simple UI with Chuck Norris portrait & "hit me" button  
