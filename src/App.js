@@ -93,7 +93,7 @@ class App extends React.Component {
 
         {/* settings/filter */}
         <div className="settings">
-          <button onClick={ this.onJokeButton }>Hit me!</button>
+          <button onClick={ this.onJokeButton }>Hit me{this.state.result !== '' ? ' again' : ''}!</button>
           <button onClick={this.onShowSettings}>Settings&nbsp;
             {this.state.visible ? <i className="fas fa-caret-up"></i> : <i className="fas fa-caret-down"></i>}
           </button>
