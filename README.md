@@ -17,11 +17,10 @@ The user:
 ## The work process
 
 1. set up react-app using `create-react-app`  
-2. deploy with simple interface  
-
-3. set up interface with dummy components  
-4. fetch data and display it in the Fact component  
+2. deploy with simple "nothing to see"-interface  
 ![Dancin' Chuck Norris](https://media.giphy.com/media/9oIZogsRnw81FtHq4x/giphy.gif)  
+3. set up interface with dummy components  
+4. fetch data and display it in the Fact component   
 5. sketch out component tree  
 6. start from scratch  
     1. render simple UI with Chuck Norris portrait & "hit me" button  
