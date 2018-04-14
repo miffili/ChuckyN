@@ -26,7 +26,7 @@ The user:
 6. start from scratch  
     1. render simple UI with Chuck Norris portrait & "hit me" button  
     2. implement "hit me"-function & render hard coded Fact component  
-    3. add Tweet function via Tweet Wen Intent  
+    3. add Tweet function via Tweet Web Intent  
     4. fetch data from database & display within Fact component  
     5. fetch multiple random facts & display Facts with `.map()`  
     6. add counter, so user can set the number of fetched facts  
@@ -44,9 +44,11 @@ The user:
 ## What I still want to do
 
 - [ ] make settings form responsive  
-- [ ] refactor code, maybe the settings form in a separate component
+- [x] refactor code, maybe the settings form in a separate component
 - [ ] implement Typechecking with PropTypes  
 - [ ] smooth out the transition of the settings menu when opened/closed → `CSSTransition`/`TransitionGroup`  
+
+[13. April 2018]
 
 -----------
 

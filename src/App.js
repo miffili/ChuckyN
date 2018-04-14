@@ -1,5 +1,6 @@
 import React from 'react';
 import FactDisplay from './FactDisplay';
+import Settings from './Settings';
 import './App.css';
 
 class App extends React.Component {
@@ -90,49 +91,33 @@ class App extends React.Component {
     return (
       <div className="App">
         <img src="imgs/conterfey.png" alt="monochromatic head of chuck norris"/>
-
-        {/* settings/filter */}
-        <div className="settings">
-          <button onClick={ this.onJokeButton }>Hit me{this.state.result !== '' ? ' again' : ''}!</button>
-          <button onClick={this.onShowSettings}>Settings&nbsp;
-            {this.state.visible ? <i className="fas fa-caret-up"></i> : <i className="fas fa-caret-down"></i>}
+        
+        <div className="menu">
+          <button onClick={ this.onJokeButton }>
+            Hit me{this.state.result !== '' ? ' again' : ''}!
+          </button>
+          <button onClick={this.onShowSettings}>
+            Settings&nbsp;
+            {this.state.visible ?
+              <i className="fas fa-caret-up"></i> :
+              <i className="fas fa-caret-down"></i>}
           </button>
         </div>
         {this.state.visible ?
-          <form onSubmit={ this.handleSubmit }>
-            <label>
-              Change name to:&nbsp;
-              <input
-                type="text"
-                name="firstname"
-                placeholder="Chuck"
-                value={ this.state.firstname }
-                onChange={ this.handleNameChange }/>
-              <input
-                type="text"
-                name="lastname"
-                placeholder="Norris"
-                value={ this.state.lastname }
-                onChange={ this.handleNameChange }/>
-            </label>
-            <label>
-              <input
-                type="checkbox"
-                name="onlyDev"
-                checked={ this.state.onlyDev }
-                onChange={ this.handleCheckboxChange }/>
-              only nerdy
-            </label>
-            <label>
-              Hits:&nbsp;
-              <input type="number" min="1" value={ this.state.count } onChange={ this.handleCountChange }/>
-            </label>
-            <input type="submit" style={{display: "none"}}/>
-          </form>
+          <Settings
+            state={ this.state }
+            handleSubmit={ this.handleSubmit }
+            handleNameChange={ this.handleNameChange }
+            handleCheckboxChange={ this.handleCheckboxChange}
+            handleCountChange={this.handleCountChange}
+          />
         : ''}
 
         {this.state.result !== '' ?
-          <FactDisplay result={ this.state.result } count={ this.state.count }/>
+          <FactDisplay
+            result={ this.state.result }
+            count={ this.state.count }
+          />
         : ''}
         {this.state.result !== '' ?
           <div>
