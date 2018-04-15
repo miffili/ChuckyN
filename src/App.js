@@ -1,16 +1,16 @@
-import React from 'react';
-import FactDisplay from './FactDisplay';
-import Settings from './Settings';
-import './App.css';
+import React from "react";
+import FactDisplay from "./FactDisplay";
+import Settings from "./Settings";
+import "./App.css";
 
 class App extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      result: '',
+      result: "",
       count: 3,
-      firstname: '',
-      lastname: '',
+      firstname: "",
+      lastname: "",
       onlyDev: false,
       visible: false
     }
@@ -34,9 +34,9 @@ class App extends React.Component {
 
   onJokeButton() {
     // console.log(this.state);
-    const addFirstname = this.state.firstname !== '' ? `&firstName=${this.state.firstname}` : '';
-    const addLastname = this.state.lastname !== '' ? `&lastName=${this.state.lastname}` : '';
-    const limitToDev = this.state.onlyDev === true ? `&limitTo=[nerdy]` : ''
+    const addFirstname = this.state.firstname !== "" ? `&firstName=${this.state.firstname}` : "";
+    const addLastname = this.state.lastname !== "" ? `&lastName=${this.state.lastname}` : "";
+    const limitToDev = this.state.onlyDev === true ? `&limitTo=[nerdy]` : ""
     const endpoint = `http://api.icndb.com/jokes/random/${this.state.count}?exclude=[explicit]&escape=javascript${addFirstname}${addLastname}${limitToDev}`;
 
     fetch(endpoint)
@@ -45,9 +45,9 @@ class App extends React.Component {
   }
 
   onMoreButton() {
-    const addFirstname = this.state.firstname !== '' ? `&firstName=${this.state.firstname}` : '';
-    const addLastname = this.state.lastname !== '' ? `&lastName=${this.state.lastname}` : '';
-    const limitToDev = this.state.onlyDev === true ? `&limitTo=[nerdy]` : ''
+    const addFirstname = this.state.firstname !== "" ? `&firstName=${this.state.firstname}` : "";
+    const addLastname = this.state.lastname !== "" ? `&lastName=${this.state.lastname}` : "";
+    const limitToDev = this.state.onlyDev === true ? `&limitTo=[nerdy]` : ""
     const endpoint = `http://api.icndb.com/jokes/random/${this.state.count}?exclude=[explicit]&escape=javascript${addFirstname}${addLastname}${limitToDev}`;
 
     const result = this.state.result;
@@ -59,10 +59,10 @@ class App extends React.Component {
 
   onClearButton() {
     this.setState({
-      result: '',
+      result: "",
       count: 3,
-      firstname: '',
-      lastname: '',
+      firstname: "",
+      lastname: "",
       onlyDev: false,
       settingVisible: false
     })
@@ -95,7 +95,7 @@ class App extends React.Component {
 
         <div className="menu">
           <button onClick={ this.onJokeButton } tabIndex="1">
-            Hit me{this.state.result !== '' ? ' again' : ''}!
+            Hit me{this.state.result !== "" ? " again" : ""}!
           </button>
           <button onClick={this.onShowSettings} tabIndex="2">
             Settings&nbsp;
@@ -112,19 +112,19 @@ class App extends React.Component {
             handleCheckboxChange={ this.handleCheckboxChange}
             handleCountChange={this.handleCountChange}
           />
-        : ''}
+        : ""}
 
-        {this.state.result !== '' ?
+        {this.state.result !== "" ?
           <FactDisplay
             result={ this.state.result }
           />
-        : ''}
-        {this.state.result !== '' ?
+        : ""}
+        {this.state.result !== "" ?
           <div>
             <button onClick={ this.onMoreButton } tabIndex="7">Give me { this.state.count } more!</button>
             <button onClick={ this.onClearButton } tabIndex="8">Clear all!</button>
           </div>
-        : ''}
+        : ""}
       </div>
     );
   }
