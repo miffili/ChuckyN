@@ -29,12 +29,10 @@ button {
   cursor: pointer;
   font-family: inherit;
   color: white;
-  outline: none;
   z-index: 99;
 }
 
 button:focus {
-  outline: none;
 }
 
 a {
@@ -112,6 +110,7 @@ button:hover, a:hover, span:hover {
 .settings {
   font-size: 1.1rem;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   background-color: rgba(255, 255, 255, 0.6);
   width: 70vW;
@@ -123,9 +122,14 @@ button:hover, a:hover, span:hover {
 
 label {
   margin: 0.6rem;
-  height: 1.2rem;
+  /* height: 1.2rem; */
   display: flex;
   align-items: center;
+  justify-content: center;
+}
+
+.name-change {
+  flex-direction: column;
 }
 
 input {
@@ -138,10 +142,22 @@ input {
 }
 
 input:focus {
-  background-color: rgba(255, 255, 255, 0.8);
+  background-color: rgba(255, 255, 255, 0.9);
   outline: none;
 }
 
 input[type="number"] {
   width: 3rem;
+}
+
+@media (min-width: 1040px) {
+  .settings {
+    flex-direction: row;
+  }
+}
+
+@media (min-width: 720px) {
+  .name-change {
+    flex-direction: row;
+  }
 }

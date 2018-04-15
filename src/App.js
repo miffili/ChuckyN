@@ -74,6 +74,7 @@ class App extends React.Component {
 
   handleSubmit(event) {
     event.preventDefault();
+    this.onJokeButton();
   }
 
   handleNameChange(event) {
@@ -91,12 +92,12 @@ class App extends React.Component {
     return (
       <div className="App">
         <img src="imgs/conterfey.png" alt="monochromatic head of chuck norris"/>
-        
+
         <div className="menu">
-          <button onClick={ this.onJokeButton }>
+          <button onClick={ this.onJokeButton } tabIndex="1">
             Hit me{this.state.result !== '' ? ' again' : ''}!
           </button>
-          <button onClick={this.onShowSettings}>
+          <button onClick={this.onShowSettings} tabIndex="2">
             Settings&nbsp;
             {this.state.visible ?
               <i className="fas fa-caret-up"></i> :
@@ -121,8 +122,8 @@ class App extends React.Component {
         : ''}
         {this.state.result !== '' ?
           <div>
-            <button onClick={ this.onMoreButton }>Give me { this.state.count } more!</button>
-            <button onClick={ this.onClearButton }>Clear all!</button>
+            <button onClick={ this.onMoreButton } tabIndex="7">Give me { this.state.count } more!</button>
+            <button onClick={ this.onClearButton } tabIndex="8">Clear all!</button>
           </div>
         : ''}
       </div>

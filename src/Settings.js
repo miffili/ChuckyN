@@ -3,7 +3,7 @@ import React from 'react';
 const Settings = (props) => {
   return (
     <form onSubmit={ props.handleSubmit } className="settings">
-      <label>
+      <label className="name-change">
         Change name to:&nbsp;
         <input
           type="text"
@@ -11,6 +11,7 @@ const Settings = (props) => {
           placeholder="Chuck"
           value={ props.state.firstname }
           onChange={ props.handleNameChange }
+          tabIndex="3"
         />
         <input
           type="text"
@@ -18,6 +19,7 @@ const Settings = (props) => {
           placeholder="Norris"
           value={ props.state.lastname }
           onChange={ props.handleNameChange }
+          tabIndex="4"
         />
       </label>
       <label>
@@ -26,6 +28,7 @@ const Settings = (props) => {
           name="onlyDev"
           checked={ props.state.onlyDev }
           onChange={ props.handleCheckboxChange }
+          tabIndex="5"
         />
         only nerdy
       </label>
@@ -36,9 +39,10 @@ const Settings = (props) => {
           min="1"
           value={ props.state.count }
           onChange={ props.handleCountChange }
+          tabIndex="6"
         />
       </label>
-      <input type="submit" style={{display: "none"}}/>
+      <button type="submit" style={{display: "none"}}/>
     </form>
   );
 }
