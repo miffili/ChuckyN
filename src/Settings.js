@@ -1,4 +1,5 @@
-import React from 'react';
+import React from "react";
+import PropTypes from "prop-types";
 
 const Settings = (props) => {
   return (
@@ -45,6 +46,14 @@ const Settings = (props) => {
       <button type="submit" style={{display: "none"}}/>
     </form>
   );
+}
+
+Settings.propTypes = {
+  state: PropTypes.object.isRequired,
+  handleSubmit: PropTypes.func.isRequired,
+  handleNameChange: PropTypes.func.isRequired,
+  handleCheckboxChange: PropTypes.func.isRequired,
+  handleCountChange: PropTypes.func.isRequired
 }
 
 export default Settings;

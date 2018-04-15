@@ -29,11 +29,11 @@ class App extends React.Component {
     this.setState({
       visible: value
     })
-    console.log(this.state);
+    // console.log(this.state);
   }
 
   onJokeButton() {
-    console.log(this.state);
+    // console.log(this.state);
     const addFirstname = this.state.firstname !== '' ? `&firstName=${this.state.firstname}` : '';
     const addLastname = this.state.lastname !== '' ? `&lastName=${this.state.lastname}` : '';
     const limitToDev = this.state.onlyDev === true ? `&limitTo=[nerdy]` : ''
@@ -117,7 +117,6 @@ class App extends React.Component {
         {this.state.result !== '' ?
           <FactDisplay
             result={ this.state.result }
-            count={ this.state.count }
           />
         : ''}
         {this.state.result !== '' ?

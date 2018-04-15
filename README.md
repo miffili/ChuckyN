@@ -42,9 +42,9 @@ The user:
 
 ## What I still want to do
 
-- [ ] make settings form responsive  
+- [x] make settings form responsive  
 - [x] refactor code, maybe the settings form in a separate component
-- [ ] implement Typechecking with PropTypes  
+- [x] implement Typechecking with PropTypes  
 - [ ] smooth out the transition of the settings menu when opened/closed → `CSSTransition`/`TransitionGroup`  
 
 [13. April 2018]

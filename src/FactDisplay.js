@@ -1,7 +1,9 @@
-import React from 'react';
-import './App.css';
+import React from "react";
+import PropTypes from "prop-types";
+import "./App.css";
 
 const FactDisplay = (props) => {
+  console.log(props);
   const tweetHref = "https://twitter.com/intent/tweet?text=";
   return (
     <div className="factDisplay">
@@ -19,6 +21,10 @@ const FactDisplay = (props) => {
       )}
     </div>
   );
+}
+
+FactDisplay.propTypes = {
+  result: PropTypes.array.isRequired
 }
 
 export default FactDisplay;
