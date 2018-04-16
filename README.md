@@ -46,6 +46,7 @@ The user:
 - [x] refactor code, maybe the settings form in a separate component
 - [x] implement Typechecking with PropTypes  
 - [ ] smooth out the transition of the settings menu when opened/closed → `CSSTransition`/`TransitionGroup`  
+- [ ] currently the Tweet function is not accessible by keyboard only navigation, it's something, I want to implement as well
 
 [13. April 2018]
 
