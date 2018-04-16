@@ -139,12 +139,12 @@ input[type="number"] {
   right: 0;
 }
 
-.fact:hover {
+.fact:hover, .fact:focus, .fact a:focus {
   box-shadow: 0.2rem 0.2rem .5rem 0 rgba(0, 0, 0, 0.5);
   transform: scale(1.02);
 }
 
-.fact:hover a {
+.fact:hover a, .fact:focus a {
   display: grid;
   justify-content: center;
   align-content: center;

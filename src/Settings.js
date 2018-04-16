@@ -10,26 +10,26 @@ const Settings = (props) => {
           type="text"
           name="firstname"
           placeholder="Chuck"
-          value={ props.state.firstname }
-          onChange={ props.handleNameChange }
-          tabIndex="3"
+          value={ props.firstname }
+          onChange={ props.handleSettingsChange }
+          tabIndex="2"
         />
         <input
           type="text"
           name="lastname"
           placeholder="Norris"
-          value={ props.state.lastname }
-          onChange={ props.handleNameChange }
-          tabIndex="4"
+          value={ props.lastname }
+          onChange={ props.handleSettingsChange }
+          tabIndex="2"
         />
       </label>
       <label>
         <input
           type="checkbox"
           name="onlyDev"
-          checked={ props.state.onlyDev }
+          checked={ props.onlyDev }
           onChange={ props.handleCheckboxChange }
-          tabIndex="5"
+          tabIndex="2"
         />
         only nerdy
       </label>
@@ -37,10 +37,11 @@ const Settings = (props) => {
         Hits:&nbsp;
         <input
           type="number"
+          name="count"
           min="1"
-          value={ props.state.count }
-          onChange={ props.handleCountChange }
-          tabIndex="6"
+          value={ props.count }
+          onChange={ props.handleSettingsChange }
+          tabIndex="2"
         />
       </label>
       <button type="submit" style={{display: "none"}}/>
@@ -49,11 +50,13 @@ const Settings = (props) => {
 }
 
 Settings.propTypes = {
-  state: PropTypes.object.isRequired,
+  count: PropTypes.string.isRequired,
+  firstname: PropTypes.string.isRequired,
+  lastname: PropTypes.string.isRequired,
+  onlyDev: PropTypes.bool.isRequired,
   handleSubmit: PropTypes.func.isRequired,
-  handleNameChange: PropTypes.func.isRequired,
-  handleCheckboxChange: PropTypes.func.isRequired,
-  handleCountChange: PropTypes.func.isRequired
+  handleSettingsChange: PropTypes.func.isRequired,
+  handleCheckboxChange: PropTypes.func.isRequired
 }
 
 export default Settings;

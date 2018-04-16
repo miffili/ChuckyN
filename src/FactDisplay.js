@@ -3,12 +3,12 @@ import PropTypes from "prop-types";
 import "./App.css";
 
 const FactDisplay = (props) => {
-  // console.log(props);
+  console.log(props);
   const tweetHref = "https://twitter.com/intent/tweet?text=";
   return (
     <div className="factDisplay">
-      {props.result.map((el, i) =>
-        <div className="fact" key={`${el.id}_${i}`}>
+      {props.result.map((el) =>
+        <div className="fact" key={`${el.id}`}>
           <p>{el.joke}</p>
           <a
             className="tweetButton"
@@ -24,7 +24,7 @@ const FactDisplay = (props) => {
 }
 
 FactDisplay.propTypes = {
-  result: PropTypes.array.isRequired
+  result: PropTypes.arrayOf(PropTypes.object).isRequired
 }
 
 export default FactDisplay;
