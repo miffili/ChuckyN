@@ -15,7 +15,7 @@ body {
   display: grid;
   align-content: center;
   justify-items: center;
-  min-height: 100vh;
+  min-height: 100vH;
   padding: 3rem;
   background: rgba(0, 0, 0, 0.1);
   box-sizing: border-box;
@@ -148,6 +148,16 @@ input[type="number"] {
   display: grid;
   justify-content: center;
   align-content: center;
+}
+
+footer {
+  width: 100%;
+  height: 0;
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 0.75rem;
+  text-align: center;
+  box-sizing: border-box;
+  transform: translateY(-1.5rem);
 }
 
 @media (min-width: 1040px) {
