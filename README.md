@@ -6,7 +6,7 @@ After learning & doing a few tutorials/courses on React for a few days, I wanted
 
 Originally, I wanted to use another database, but I switched mid way through, because I didn't liked the content the initial chosen database provided. With that, I needed to adapt the functionality a bit.
 
-**user stories**
+**User stories**
 
 The user:  
 * sees a simple interface on load  
@@ -18,7 +18,7 @@ The user:
 
 1. set up react-app using `create-react-app`  
 2. deploy with simple "nothing to see"-interface  
-![Dancin' Chuck Norris](https://media.giphy.com/media/9oIZogsRnw81FtHq4x/giphy.gif)  
+![Dancin' Chuck Norris](public/imgs/chuck_norris_dancin___by_jesgrad07.gif)  
 3. set up interface with dummy components  
 4. fetch data and display it in the Fact component   
 5. sketch out component tree  
@@ -45,10 +45,8 @@ The user:
 - [x] make settings form responsive  
 - [x] refactor code, maybe the settings form in a separate component
 - [x] implement Typechecking with PropTypes  
-- [ ] smooth out the transition of the settings menu when opened/closed → `CSSTransition`/`TransitionGroup`  
-- [ ] currently the Tweet function is not accessible by keyboard only navigation, it's something, I want to implement as well
-
-[13. April 2018]
+- [ ] ~~smooth out the transition of the settings menu when opened/closed → `CSSTransition`/`TransitionGroup`~~
+- [ ] ~~currently the Tweet function is not accessible by keyboard only navigation, it's something, I want to implement as well~~
 
 -----------
 
