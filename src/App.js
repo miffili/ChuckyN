@@ -2,6 +2,7 @@ import React from "react";
 import FactDisplay from "./FactDisplay";
 import Settings from "./Settings";
 import "./App.css";
+import conterfey from "./conterfey.png";
 
 class App extends React.Component {
   constructor(props) {
@@ -84,7 +85,7 @@ class App extends React.Component {
     return (
       <div className="App">
         <img
-          src="imgs/conterfey.png"
+          src={conterfey}
           alt="monochromatic head of chuck norris"
         />
 
